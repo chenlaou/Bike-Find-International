@@ -4,21 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
-    <title>Bike Find International</title>
+    <script src="assets/javascript/app.js"></script>
+    <title>Project 1</title>
   </head>
   <body>
-<div class="card" id="infoDisplay">
-  <div id="city"></div>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">BikeFind International</h1>
 
-</div>
+          <p class="lead">Getting you pedaling, anywhere in the world!</p>
+        </div>
+      </div>
 
-    
-<script src="assets/javascript/app.js"></script>
+      <div id="weather-input"></div>
+      <div id="videoDiv">
+        <video autoplay loop id="video-background" muted plays-inline>
+          <source
+            src="https://www.youtube.com/watch?v=uEb_0Q1uR3o"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+
+      <div id="formDiv">
+        <form>
+          <div class="form-group">
+            <input
+              class="form-control"
+              id="user-input"
+              placeholder="Where are you?"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              ><em>Enter an address</em></small
+            >
+          </div>
+          <button id="search" type="submit" class="btn btn-success">
+            <a id="search-link" href="index2.html">Find Bikes!</a>
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
