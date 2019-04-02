@@ -9,20 +9,25 @@
   height: auto;
   z-index: -100;
 }
-#video-background2 {
-  /*  making the video fullscreen  */
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-}
+
+#videoDiv {
+    /*  making the videoDiv fullscreen  */
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99;
+    background-color: white;
+  opacity: 0.6;
+  }
+
 
 body {
   text-align: center;
+  
 }
 
 .jumbotron {
@@ -53,8 +58,11 @@ h1 {
 }
 
 user-input {
-  border: solid 2px grey;
   margin-bottom: 1rem;
+}
+
+.form-control {
+  border: solid 1px black;
 }
 
 input {
@@ -73,10 +81,6 @@ input {
   color: white;
 }
 
-small em {
-  color: white;
-}
-
 #mapContainer {
   min-height: 24rem;
 }
@@ -85,12 +89,23 @@ small em {
   margin: 3rem;
   font-family: Baloo Chettan;
   border: solid 2px black;
+  background-color: gainsboro;
 }
 
 #search2 {
   margin-top: 1rem;
+  border: solid 2px black;
 }
 
 #search {
-  margin-top: 3rem;
+  margin-top: 3.5rem;
+  border: solid 2px black;
 }
+
+#index2jumbo {
+  color: white;
+}
+
+/* a:hover {
+  fix this
+} */

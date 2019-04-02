@@ -22,7 +22,9 @@
     <div class="container-fluid">
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-4">BikeFind International</h1>
+          <h1 class="display-4">
+            <a href="index.html" id="index2jumbo">BikeFind International</a>
+          </h1>
 
           <p class="lead">Getting you pedaling, anywhere in the world!</p>
         </div>
@@ -41,10 +43,11 @@
         </div>
       </div>
     </div>
-    <!-- <div id="videoDiv"> -->
-    <video autoplay loop id="video-background2" muted plays-inline>
-      <source src="assets/BikeNYC.mp4" type="video/mp4" />
-    </video>
+    <div id="videoDiv">
+      <video autoplay loop id="video-background" muted plays-inline>
+        <source src="nycbikevideo.mp4" type="video/mp4" />
+      </video>
+    </div>
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js"></script>
     <link
       href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css"
@@ -63,7 +66,6 @@
       }
     </style>
 
-    <!-- <div id='map'></div> -->
     <script>
       mapboxgl.accessToken =
         "pk.eyJ1IjoiY2hlbmxhIiwiYSI6ImNqdHZtbmV2ODF5bzU0Ym5ycXR1OXBxZGwifQ.WyFbrZ4neOzefFUhKVgpMA";
