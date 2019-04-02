@@ -11,7 +11,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+
     <title>Project 1</title>
   </head>
   <body>
@@ -25,32 +30,38 @@
       </div>
 
       <div id="weather-input"></div>
-      <div id="videoDiv">
-        <video autoplay loop id="video-background" muted plays-inline>
-          <source
-            src="https://www.youtube.com/watch?v=uEb_0Q1uR3o"
-            type="video/mp4"
-          />
-        </video>
-      </div>
 
       <div id="formDiv">
-        <form>
-          <div class="form-group">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Use My Current Location</h5>
+
+            <a id="search" href="index2.html" class="btn btn-warning"
+              >Find Bikes!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Use An Address</h5>
             <input
               class="form-control"
               id="user-input"
-              placeholder="Where are you?"
+              placeholder="Enter an address"
             />
-            <small id="emailHelp" class="form-text text-muted"
-              ><em>Enter an address</em></small
+            <a id="search2" href="index2.html" class="btn btn-warning"
+              >Find Bikes!</a
             >
           </div>
-          <button id="search" type="submit" class="btn btn-success">
-            <a id="search-link" href="index2.html">Find Bikes!</a>
-          </button>
-        </form>
+        </div>
       </div>
+    </div>
+    <div id="videoDiv">
+      <video autoplay loop id="video-background" muted plays-inline>
+        <source src="assets/nycbikevideo.mp4" type="video/mp4" />
+      </video>
     </div>
   </body>
 </html>
