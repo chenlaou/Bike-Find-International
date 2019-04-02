@@ -15,7 +15,7 @@ var database = firebase.database();
 
 var location;
 
-$("#search").on("click", function() {
+$("#search2").on("click", function() {
   event.preventDefault();
   // Storing and retreiving location data
   location = $("#user-input").val().trim();

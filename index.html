@@ -11,12 +11,15 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="assets/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baloo+Chettan"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script> -->
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
-    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+
     <title>Project 1</title>
   </head>
   <body>
@@ -30,17 +33,34 @@
       </div>
 
       <div id="weather-input"></div>
-      <div id="videoDiv">
-        <video autoplay loop id="video-background" muted plays-inline>
-          <source
-            src="https://www.youtube.com/watch?v=uEb_0Q1uR3o"
-            type="video/mp4"
-          />
-        </video>
-      </div>
 
       <div id="formDiv">
-        <form>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Use My Current Location</h5>
+
+            <a id="search" href="index2.html" class="btn btn-warning"
+              >Find Bikes!</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Use An Address</h5>
+            <input
+              class="form-control"
+              id="user-input"
+              placeholder="Enter an address"
+            />
+            <a id="search2" href="index2.html" class="btn btn-warning"
+              >Find Bikes!</a
+            >
+          </div>
+        </div>
+
+        <!-- <form>
           <div class="form-group">
             <input
               class="form-control"
@@ -51,11 +71,20 @@
               ><em>Enter an address</em></small
             >
           </div>
-          <button id="search" type="" class="btn btn-success">
-            <a id="search-link" href="#">Find Bikes!</a>
+
+
+          <button id="search" type="submit" class="btn btn-warning">
+            <a id="search-link" href="index2.html">Find Bikes!</a>
           </button>
-        </form>
+        </form> -->
       </div>
     </div>
+    <!-- <div id="videoDiv"> -->
+    <video autoplay loop id="video-background" muted plays-inline>
+      <source src="assets/BikeNYC.mp4" type="video/mp4" />
+    </video>
+    <!-- </div> -->
+
+    <script src="assets/javascript/app.js"></script>
   </body>
 </html>

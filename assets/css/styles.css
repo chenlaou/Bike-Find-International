@@ -1,0 +1,96 @@
+#video-background {
+  /*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+#video-background2 {
+  /*  making the video fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+body {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: black;
+  padding: 1rem;
+}
+
+.container {
+  text-align: left;
+  padding: 0rem;
+}
+
+h1 {
+  float: left;
+  font-family: Baloo Chettan;
+  font-size: 2rem;
+  font-style: italic;
+  color: white;
+}
+
+#formDiv {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+user-input {
+  border: solid 2px grey;
+  margin-bottom: 1rem;
+}
+
+input {
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+  text-align: center;
+  padding: 0;
+}
+
+#search-link {
+  color: black;
+}
+
+.lead {
+  clear: left;
+  color: white;
+}
+
+small em {
+  color: white;
+}
+
+#mapContainer {
+  min-height: 24rem;
+}
+
+.card {
+  margin: 3rem;
+  font-family: Baloo Chettan;
+  border: solid 2px black;
+}
+
+#search2 {
+  margin-top: 1rem;
+}
+
+#search {
+  margin-top: 3rem;
+}
