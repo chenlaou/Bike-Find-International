@@ -15,18 +15,28 @@ var database = firebase.database();
 
 var location;
 
-$("#search2").on("click", function() {
-  event.preventDefault();
-  // Storing and retreiving location data
+if (window.location.search.includes("use_location=true")) {
+  setTimeout(function() {
+    $("button.mapboxgl-ctrl-geolocate").click()
+  });
+}
+
+
+
+$("#search-link1").on("click", function() {
+
   location = $("#user-input").val().trim();
   console.log(location)
   var newSearch = {
     location: location,
   }
   console.log(newSearch)
-  // Pushing to database
-  database.ref().set(newSearch)
+
+  database.ref().set(newSearch);
+
 });
+
+
 
 // CITYBIKE API
 var queryURL = "http://api.citybik.es/v2/networks";
