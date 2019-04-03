@@ -11,23 +11,21 @@
 }
 
 #videoDiv {
-    /*  making the videoDiv fullscreen  */
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -99;
-    background-color: white;
+  /*  making the videoDiv fullscreen  */
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -99;
+  background-color: white;
   opacity: 0.6;
-  }
-
+}
 
 body {
   text-align: center;
-  
 }
 
 .jumbotron {
@@ -59,17 +57,21 @@ h1 {
 
 user-input {
   margin-bottom: 1rem;
+  min-width: 10rem;
 }
 
 .form-control {
   border: solid 1px black;
+  padding: 1.5rem 8rem;
+  border: solid 2px black;
+  font-size: 1.5rem;
 }
 
 input {
-  font-size: 2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
   text-align: center;
   padding: 0;
+  font-family: Baloo Chettan;
 }
 
 #search-link {
@@ -95,17 +97,26 @@ input {
 #search2 {
   margin-top: 1rem;
   border: solid 2px black;
+  font-family: Baloo Chettan;
+  background-color: hotpink;
 }
 
 #search {
-  margin-top: 3.5rem;
   border: solid 2px black;
+  margin-bottom: 1rem;
+  font-family: Baloo Chettan;
 }
 
 #index2jumbo {
   color: white;
 }
 
-/* a:hover {
-  fix this
-} */
+a:hover {
+  text-decoration: unset;
+}
+
+small {
+  color: white;
+  font-size: 1rem;
+  font-style: italic;
+}
