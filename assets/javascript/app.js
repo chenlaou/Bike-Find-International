@@ -15,7 +15,7 @@ $(document).ready(function(){
   var database = firebase.database();
 
   // Pushes user input into firebase
-  $("#search-link1").on("click", function() {
+  $("#search").on("click", function() {
     var location = $("#user-input").val().trim();
 
     var newSearch = {
@@ -26,9 +26,9 @@ $(document).ready(function(){
   });
 
   // Clicks on current location when user opts to use current location button on index1
-if (window.location.search.includes("use_location=true")) {
-  setTimeout(function() {
-    $("button.mapboxgl-ctrl-geolocate").click()
-  });
-}
+  if (window.location.search.includes("use_location=true")) {
+    setTimeout(function() {
+      $("button.mapboxgl-ctrl-geolocate").click()
+    });
+  }
 });
