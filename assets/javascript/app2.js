@@ -64,7 +64,15 @@ function ajaxCall(location) {
           center: [filteredLocation.location.longitude, filteredLocation.location.latitude], // starting position
           zoom: 9 // starting zoom
         });
+        $(".city").text(filteredLocation.location.city)
+        $(".country").text(filteredLocation.location.country)
+        $(".company").text(filteredLocation.company)
       }
+      console.log(filteredLocation)
+
+      // $(".city").text(filteredLocation.location.city)
+      // $(".country").text(filteredLocation.location.country)
+      // $(".company").text(filteredLocation.company)
 
      // Add SEARCH/GEOCODER FUNCTION
       map.addControl(
