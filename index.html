@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,9 +15,7 @@
       href="https://fonts.googleapis.com/css?family=Baloo+Chettan"
       rel="stylesheet"
     />
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+  
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 
     <title>Project 1</title>
@@ -36,16 +34,17 @@
 
       <div id="formDiv">
 
-          <form>
+          <form id="form">
               <div class="form-group">
                 <!-- <label for="exampleInputEmail1">Email address</label> -->
-                <input  class="form-control" id="user-input" aria-describedby="emailHelp" placeholder="Where are you?">
-                <small id="emailHelp">Enter an address</small>
+                <input  class="form-control" id="user-input" placeholder="Where are you?" validate>
+                <small id="emailHelp">Enter a city</small>
               </div>
               
-              <button type="submit" id="search" class="btn btn-warning"><a  href="index2.html" id="search-link"
+              <!-- <button type="submit" id="search" class="btn btn-warning"><a  href="index2.html" id="search-link"
                 >Find Bikes!</a
-              ></button>
+              ></button> -->
+              <input type="button" id="search" class="btn btn-warning" value="Find Bikes"/>
               <br>
               OR
               <br>
@@ -53,31 +52,26 @@
                 >Use my Current Location</a
               ></button>
             </form>
-        <!-- <div class="card" style="width: 18rem;">
-          <img class="card-img-top" />
-          <div class="card-body">
-            <h5 class="card-title">Use My Current Location</h5>
 
-            <a id="search" href="index2.html" class="btn btn-warning"
-              >Find Bikes!</a
-            >
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" />
-          <div class="card-body">
-            <h5 class="card-title">Use An Address</h5>
-            <input
-              class="form-control"
-              id="user-input"
-              placeholder="Enter an address"
-            />
-            <a id="search2" href="index2.html" class="btn btn-warning"
-              >Find Bikes!</a
-            >
-          </div>
-        </div> -->
-
+            <div class="modal" tabindex="-1" role="dialog" id="myModal">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p>You must enter a valid city.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
        
         </div>
       </div>
@@ -87,5 +81,12 @@
         <source src="nycbikevideo.mp4" type="video/mp4" />
       </video>
     </div>
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-database.js"></script>
+    <script src="assets/javascript/modal.js"></script>
+    
   </body>
 </html>
