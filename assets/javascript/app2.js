@@ -23,7 +23,7 @@ database.ref().on("value", function(snapshot) {
 });
 
 // CITYBIKE API
-var queryURL = "http://api.citybik.es/v2/networks";
+var queryURL = "https://api.citybik.es/v2/networks";
 
 function ajaxCall(location) {
 
